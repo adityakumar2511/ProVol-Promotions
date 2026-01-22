@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin, } from 'lucide-react';
 import logo from '/footer-logo.png';
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const Footer = () => {
   const quickLinks = [
@@ -40,8 +42,39 @@ const Footer = () => {
     }
   };
 
+
+
   return (
     <footer className="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 text-gray-300">
+      {/* ================= STICKY ACTION BUTTONS ================= */}
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+
+        {/* WhatsApp Button */}
+        <a
+          href="https://wa.me/919621195498"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 rounded-full bg-green-600 hover:bg-green-700 
+               flex items-center justify-center shadow-2xl 
+               animate-bounce-slow transition-transform hover:scale-110"
+          aria-label="WhatsApp"
+        >
+          <FaWhatsapp className="text-white w-9 h-9" />
+        </a>
+
+        {/* Call Button */}
+        <a
+          href="tel:+919026476490"
+          className="w-14 h-14 rounded-full bg-blue-600 hover:bg-blue-700 
+               flex items-center justify-center shadow-2xl 
+               transition-transform hover:scale-110"
+          aria-label="Call Now"
+        >
+          <Phone className="text-white w-7 h-7" />
+        </a>
+
+      </div>
+
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -50,7 +83,7 @@ const Footer = () => {
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 text-center">
-          
+
           {/* About Section with Logo */}
           <motion.div variants={itemVariants} className="space-y-4 flex items-center justify-center flex-col">
             {/* <div className="flex items-center space-x-3 mb-4">
@@ -64,7 +97,7 @@ const Footer = () => {
             <p className="text-gray-400 leading-relaxed font-description">
               ProVol Promotions: Partner with us to unlock your volunteer potential and achieve sustainable community growth. Go Beyond. Contact us.
             </p>
-            
+
             {/* Social Media Icons */}
             <div className="flex space-x-4 pt-4 flex items-center justify-center">
               {socialLinks.map((social, index) => (

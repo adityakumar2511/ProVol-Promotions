@@ -106,7 +106,7 @@ const ContactPage = () => {
                 <p><strong>Email:</strong><a href="mailto:provolpromotions@gmail.com" target='_blank'> provolpromotions@gmail.com</a></p>
               </div>
             </div>
- 
+
             <div className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-2xl p-8 shadow-lg">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-3">
                 <MessageCircle className="text-green-600" />
@@ -138,7 +138,8 @@ const ContactPage = () => {
               </h2>
 
               {/* FORM */}
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form className="space-y-5" action="https://formspree.io/f/xgoaebzj"
+                method="POST">
 
                 <div className="relative">
                   <User className="absolute left-3 top-1/2 -translate-y-1/2 text-blue-600" />
