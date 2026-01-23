@@ -8,6 +8,7 @@ import AboutUs from "./pages/About";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import JoinVolunteer from "./pages/JoinVolunteer";
+
 export default function App() {
   return (
     <>
@@ -20,6 +21,9 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/join" element={<JoinVolunteer />} />
+        <Route path="/sitemap.xml" />
+        <Route path="/robots.txt" />
+
       </Routes>
       <Footer />
     </>
