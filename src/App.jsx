@@ -21,8 +21,6 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/join" element={<JoinVolunteer />} />
-        <Route path="/sitemap.xml" />
-        <Route path="/robots.txt" />
 
       </Routes>
       <Footer />
