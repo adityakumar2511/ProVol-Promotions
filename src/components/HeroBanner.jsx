@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import HeroBannerImg from '/heroBanner.png';
+import HeroBannerImg from '/heroBanner.webp';
 
 const HeroBanner = () => {
   const fadeInUp = {

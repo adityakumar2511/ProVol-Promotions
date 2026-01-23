@@ -9,7 +9,7 @@ import {
   CheckCircle
 } from "lucide-react";
 
-import VolunteerHero from "/join_volunteer.png"; // replace if needed
+import VolunteerHero from "/join_volunteer.webp"; // replace if needed
 
 const VolunteerPage = () => {
   const [formData, setFormData] = useState({

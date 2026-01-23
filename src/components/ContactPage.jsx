@@ -8,7 +8,7 @@ import {
   ChevronDown,
   ChevronRight
 } from 'lucide-react';
-import ContactHero from '/contact_hero.png';
+import ContactHero from '/contact_hero.webp';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
