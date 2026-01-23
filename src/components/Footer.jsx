@@ -15,10 +15,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' }
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61586845988983', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/provol_promotions/', label: 'Instagram' },
   ];
 
   const containerVariants = {
@@ -108,6 +106,7 @@ const Footer = () => {
                   whileTap={{ scale: 0.9 }}
                   className="w-10 h-10 rounded-full bg-blue-600 hover:bg-orange-500 flex items-center justify-center transition-colors duration-300"
                   aria-label={social.label}
+                  target='_blank'
                 >
                   <social.icon size={20} className="text-white" />
                 </motion.a>
