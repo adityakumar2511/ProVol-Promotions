@@ -191,7 +191,7 @@ const Footer = () => {
           className="border-t border-gray-700 mt-12 pt-4 text-center"
         >
           <p className="text-gray-400 font-description">
-            © 2026 ProVol Programs, All Rights Reserved. Developed By <a href="https://aditya-kumar-2511.vercel.app/" target='_blank' className='text-orange-400'> Aditya Kumar </a>
+            © 2026 ProVol Promotions, All Rights Reserved. Developed By <a href="https://aditya-kumar-2511.vercel.app/" target='_blank' className='text-orange-400'> Aditya Kumar </a>
           </p>
         </motion.div>
       </motion.div>
